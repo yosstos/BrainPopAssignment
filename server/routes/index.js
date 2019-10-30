@@ -1,15 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', {
-    title: 'Express'
-  });
-});
+var activitiesV1 = require('./activities/v1');
+var activitiesV2 = require('./activities/v2');
 
-router.get('/test', function (req, res) {
-  res.send('Hello World test')
+// GET ACTIVITES V1
+router.get('/activities-v1', function (req, res) {
+  res.send(activitiesV1)
+})
+
+// GET ACTIVITES V2
+router.get('/activities-v2', function (req, res) {
+  res.send(activitiesV2)
 })
 
 module.exports = router;
