@@ -1,5 +1,5 @@
 module.exports = [{
-    EntryID: '1',
+    id: '1',
     resource_type: 'challenge',
     score: '10',
     possible_score: '43',
@@ -7,12 +7,12 @@ module.exports = [{
     d_created: '1569753926',
     topic_data: {
       name: 'cells',
-      icon_path: '/science/cellularlifeandgenetics/cells/'
+      icon_path: '/assets/topics/cells.png'
     },
-    comment: ''
+    comment: 'Fantastic'
   },
   {
-    EntryID: '2',
+    id: '2',
     resource_type: 'make_a_map',
     score: '',
     possible_score: '',
@@ -20,12 +20,12 @@ module.exports = [{
     d_created: '1569773926',
     topic_data: {
       name: 'dogs',
-      icon_path: '/science/diversityoflife/dogs/'
+      icon_path: '/assets/topics/dogs.png'
     },
-    comment: ''
+    comment: 'Great work'
   },
   {
-    EntryID: '3',
+    id: '3',
     resource_type: 'draw_about_it',
     score: '',
     possible_score: '',
@@ -33,12 +33,12 @@ module.exports = [{
     d_created: '1567095526',
     topic_data: {
       name: 'camouflage',
-      icon_path: '/science/animals/camouflage/'
+      icon_path: '/assets/topics/camouflage.png'
     },
-    comment: ''
+    comment: 'Perfect'
   },
   {
-    EntryID: '4',
+    id: '4',
     resource_type: 'easy_quiz',
     score: '4',
     possible_score: '5',
@@ -46,12 +46,12 @@ module.exports = [{
     d_created: '1567015526',
     topic_data: {
       name: 'camouflage',
-      icon_path: '/science/animals/camouflage/'
+      icon_path: '/assets/topics/camouflage.png'
     },
-    comment: ''
+    comment: 'Great'
   },
   {
-    EntryID: '5',
+    id: '5',
     resource_type: 'make_a_movie',
     score: '',
     possible_score: '',
@@ -59,12 +59,12 @@ module.exports = [{
     d_created: '1572179526',
     topic_data: {
       name: 'ada lovelace',
-      icon_path: '/technology/computerscience/adalovelace/'
+      icon_path: '/assets/topics/adalovelace.png'
     },
-    comment: ''
+    comment: 'Excellent'
   },
   {
-    EntryID: '6',
+    id: '6',
     resource_type: 'movie',
     score: '',
     possible_score: '',
@@ -72,12 +72,12 @@ module.exports = [{
     d_created: '1567085526',
     topic_data: {
       name: 'dogs',
-      icon_path: '/science/diversityoflife/dogs/'
+      icon_path: '/assets/topics/dogs.png'
     },
-    comment: ''
+    comment: 'Please revisit'
   },
   {
-    EntryID: '7',
+    id: '7',
     resource_type: 'movie',
     score: '',
     possible_score: '',
@@ -85,12 +85,12 @@ module.exports = [{
     d_created: '1567015526',
     topic_data: {
       name: 'ada lovelace',
-      icon_path: '/technology/computerscience/adalovelace/'
+      icon_path: '/assets/topics/adalovelace.png'
     },
-    comment: ''
+    comment: 'Require fixing'
   },
   {
-    EntryID: '8',
+    id: '8',
     resource_type: 'movie',
     score: '',
     possible_score: '',
@@ -98,12 +98,12 @@ module.exports = [{
     d_created: '1567091416',
     topic_data: {
       name: 'cells',
-      icon_path: '/science/cellularlifeandgenetics/cells/'
+      icon_path: '/assets/topics/cells.png'
     },
-    comment: ''
+    comment: 'Nice one'
   },
   {
-    EntryID: '9',
+    id: '9',
     resource_type: 'quiz',
     score: '3',
     possible_score: '10',
@@ -111,12 +111,12 @@ module.exports = [{
     d_created: '1572279946',
     topic_data: {
       name: 'dna',
-      icon_path: '/science/cellularlifeandgenetics/dna/'
+      icon_path: '/assets/topics/dna.png'
     },
-    comment: 'great job!'
+    comment: 'Great job!'
   },
   {
-    EntryID: '10',
+    id: '10',
     resource_type: 'quiz',
     score: '10',
     possible_score: '10',
@@ -124,12 +124,12 @@ module.exports = [{
     d_created: '1572279526',
     topic_data: {
       name: 'ada lovelace',
-      icon_path: '/technology/computerscience/adalovelace/'
+      icon_path: '/assets/topics/adalovelace.png'
     },
-    comment: ''
+    comment: 'PERFECT!'
   },
   {
-    EntryID: '11',
+    id: '11',
     resource_type: 'related_reading',
     score: '',
     possible_score: '',
@@ -137,12 +137,12 @@ module.exports = [{
     d_created: '1572271526',
     topic_data: {
       name: 'ada lovelace',
-      icon_path: '/technology/computerscience/adalovelace/'
+      icon_path: '/assets/topics/adalovelace.png'
     },
-    comment: ''
+    comment: 'Nice job'
   },
   {
-    EntryID: '12',
+    id: '12',
     resource_type: 'word_play',
     score: '',
     possible_score: '',
@@ -150,8 +150,8 @@ module.exports = [{
     d_created: '1572282526',
     topic_data: {
       name: 'camouflage',
-      icon_path: '/science/animals/camouflage/'
+      icon_path: '/assets/topics/camouflage.png'
     },
-    comment: ''
+    comment: 'Really nice work'
   }
 ]
