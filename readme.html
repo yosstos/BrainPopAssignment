@@ -278,7 +278,8 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#screenshots">Screenshots</a>
 <ul>
 <li><a href="#activities-view">Activities view</a></li>
-<li><a href="#zoom-view">Zoom view</a></li>
+<li><a href="#zoom">Zoom</a></li>
+<li><a href="#auto-complete">Auto-complete</a></li>
 </ul>
 </li>
 <li><a href="#activity-types-and-settings">Activity Types and Settings</a></li>
@@ -309,12 +310,12 @@ The time this assignment will take to complete will differ based on experience.<
 <h1 class="mume-header" id="requirements-guides">Requirements &amp; Guides:</h1>
 
 <ul>
-<li>There are two main views in this app. <a href="#activities-view">Activities view</a> and <a href="#zoom-view">Zoom view</a>.</li>
-<li>When the user clicks on the &apos;View work&apos; link it should open the zoom view</li>
+<li>This app contains one main view. That is the <a href="#activities-view">Activities view</a></li>
 <li>The main activities feed you should be using is the <a href="#apis">Activities V1 API</a></li>
-<li>The activities timeline should be grouped and ordered by months</li>
-<li>Each activity has its own set of settings that affect its rendering. Available activities and their settings are listed in the <a href="#activity-types-and-settings">Activity Types and Settings</a> below</li>
+<li>When the user clicks on the &apos;View work&apos; link on an activity it should open a modal as seen on the <a href="#zoom">Zoom</a> screenshot</li>
 <li>The app should support direct access to the zoom view via your router</li>
+<li>The activities timeline should be grouped and ordered by months</li>
+<li>Each activity has its own set of settings that affect the way it is rendered. Available activities and their settings are listed in the <a href="#activity-types-and-settings">Activity Types and Settings</a> section</li>
 <li>The app should support two types of filters:
 <ul>
 <li>Free text filter</li>
@@ -326,8 +327,8 @@ The time this assignment will take to complete will differ based on experience.<
 <h1 class="mume-header" id="bonus">Bonus</h1>
 
 <ol>
-<li>Have the app support another feed, <a href="#apis">Activities V2 API</a>, that is structured differently. Same data, but a different structure. Make sure your code supports both structures from <a href="#apis">API #V1</a> and <a href="#apis">API #V2</a>.</li>
-<li>Add support for hiding activities. This effect should be persistent.</li>
+<li>Have the app support another feed, <a href="#apis">Activities V2 API</a>, that is structured differently. Same data, but a different structure. Make sure your code supports both structures from <a href="#apis">API #V1</a> and <a href="#apis">API #V2</a>. Create a new route that demonstrate this support.</li>
+<li>Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.</li>
 <li>Add autocomplete support to the text filter input. You can use you main <a href="#apis">APIs</a> feed for that.</li>
 </ol>
 <h1 class="mume-header" id="apis">APIs</h1>
@@ -341,9 +342,12 @@ The time this assignment will take to complete will differ based on experience.<
 <h3 class="mume-header" id="activities-view">Activities view</h3>
 
 <p><img src="assets/timeline.jpg" alt="Timeline"></p>
-<h3 class="mume-header" id="zoom-view">Zoom view</h3>
+<h3 class="mume-header" id="zoom">Zoom</h3>
 
 <p><img src="assets/zoom.jpg" alt="Zoom"></p>
+<h3 class="mume-header" id="auto-complete">Auto-complete</h3>
+
+<p><img src="assets/autocomplete.jpg" alt="Zoom"></p>
 <h1 class="mume-header" id="activity-types-and-settings">Activity Types and Settings</h1>
 
 <p>Every activity has two settings. They can be scored and they can be viewed in zoom mode (View work button). Those settings are not a part of the API response but rather resides on the client app.</p>

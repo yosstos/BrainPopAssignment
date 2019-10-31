@@ -13,7 +13,8 @@
 - [APIs](#apis)
 - [Screenshots](#screenshots)
   - [Activities view](#activities-view)
-  - [Zoom view](#zoom-view)
+  - [Zoom](#zoom)
+  - [Auto-complete](#auto-complete)
 - [Activity Types and Settings](#activity-types-and-settings)
 
 <!-- /code_chunk_output -->
@@ -43,12 +44,12 @@ The time this assignment will take to complete will differ based on experience.
 
 # Requirements & Guides:
 
-- There are two main views in this app. [Activities view](#activities-view) and [Zoom view](#zoom-view).
-- When the user clicks on the 'View work' link it should open the zoom view
+- This app contains one main view. That is the [Activities view](#activities-view)
 - The main activities feed you should be using is the [Activities V1 API](#apis)
-- The activities timeline should be grouped and ordered by months
-- Each activity has its own set of settings that affect its rendering. Available activities and their settings are listed in the [Activity Types and Settings](#activity-types-and-settings) below
+- When the user clicks on the 'View work' link on an activity it should open a modal as seen on the [Zoom](#zoom) screenshot
 - The app should support direct access to the zoom view via your router
+- The activities timeline should be grouped and ordered by months
+- Each activity has its own set of settings that affect the way it is rendered. Available activities and their settings are listed in the [Activity Types and Settings](#activity-types-and-settings) section
 - The app should support two types of filters:
   - Free text filter
   - Activity type filter
@@ -56,8 +57,8 @@ The time this assignment will take to complete will differ based on experience.
 
 # Bonus
 
-1. Have the app support another feed, [Activities V2 API](#apis), that is structured differently. Same data, but a different structure. Make sure your code supports both structures from [API #V1](#apis) and [API #V2](#apis).
-2. Add support for hiding activities. This effect should be persistent.
+1. Have the app support another feed, [Activities V2 API](#apis), that is structured differently. Same data, but a different structure. Make sure your code supports both structures from [API #V1](#apis) and [API #V2](#apis). Create a new route that demonstrate this support.
+2. Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.
 3. Add autocomplete support to the text filter input. You can use you main [APIs](#apis) feed for that.
 
 # APIs
@@ -69,8 +70,10 @@ The time this assignment will take to complete will differ based on experience.
 
 ###Activities view
 ![Timeline](assets/timeline.jpg)
-###Zoom view
+###Zoom
 ![Zoom](assets/zoom.jpg)
+###Auto-complete
+![Zoom](assets/autocomplete.jpg)
 
 # Activity Types and Settings
 
