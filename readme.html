@@ -265,8 +265,13 @@ pre[data-line] .line-highlight[data-end]:after {
       <div class="mume markdown-preview  ">
       <p style="font-weight:600; font-size:36px">TABLE OF CONTENT</p>
 <div class="code-chunk" data-id="code-chunk-id-0" data-cmd="toc"><div class="input-div"><div class="btn-group"><div class="run-btn btn"><span>&#x25B6;&#xFE0E;</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"></div></div><ul>
-<li><a href="#environment-setup">Environment Setup</a> - <a href="#client">Client</a> - <a href="#server">Server</a></li>
-<li><a href="#assignment">Assignment</a></li>
+<li><a href="#environment-setup">Environment Setup</a>
+<ul>
+<li><a href="#vue-client">Vue Client</a></li>
+<li><a href="#server">Server</a></li>
+</ul>
+</li>
+<li><a href="#assignment-details">Assignment Details</a></li>
 <li><a href="#requirements-guides">Requirements &amp; Guides:</a></li>
 <li><a href="#bonus">Bonus</a></li>
 <li><a href="#apis">APIs</a></li>
@@ -280,7 +285,7 @@ pre[data-line] .line-highlight[data-end]:after {
 </ul>
 <h1 class="mume-header" id="environment-setup">Environment Setup</h1>
 
-<h5 class="mume-header" id="client">Client</h5>
+<h2 class="mume-header" id="vue-client">Vue Client</h2>
 
 <ol>
 <li>Navigate to your client folder: <code>cd {project folder}/client</code></li>
@@ -288,7 +293,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <li>Run your dev server. <code>npm run serve</code>. Your dev server is ready at <a href="http://localhost:8080">http://localhost:8080</a><br>
 (The dev server defaults to port 8080. If it&apos;s taken and it uses a different one you&apos;ll need to update your cors settings in the server app.js)</li>
 </ol>
-<h5 class="mume-header" id="server">Server</h5>
+<h2 class="mume-header" id="server">Server</h2>
 
 <ol>
 <li>Navigate to your server folder: <code>cd {project folder}/server</code></li>
@@ -296,17 +301,19 @@ pre[data-line] .line-highlight[data-end]:after {
 <li>Run your server. <code>DEBUG=server:\* npm start</code>. Your server is ready at <a href="http://localhost:3000">http://localhost:3000</a></li>
 </ol>
 <hr>
-<h1 class="mume-header" id="assignment">Assignment</h1>
+<h1 class="mume-header" id="assignment-details">Assignment Details</h1>
 
-<p>Your task is to build a student timeline component as shown in image #1. The timeline displays all the student activities.<br>
-You can find the full spec, screenshots and APIs below.</p>
+<p>Your task is to build a student timeline app as shown in the <a href="#activities-view">Activities view</a> screenshot. This timeline displays all the student activities.<br>
+You can find the <a href="#requirements-guides">Requirements</a>, <a href="#screenshots">Screenshots</a> and <a href="#apis">APIs</a> below.<br>
+The time this assignment will take to complete will differ based on experience.</p>
 <h1 class="mume-header" id="requirements-guides">Requirements &amp; Guides:</h1>
 
 <ul>
 <li>There are two main views in this app. <a href="#activities-view">Activities view</a> and <a href="#zoom-view">Zoom view</a>.</li>
-<li>The main activities feed you should be using is the V1 <a href="#apis">APIs</a></li>
+<li>When the user clicks on the &apos;View work&apos; link it should open the zoom view</li>
+<li>The main activities feed you should be using is the <a href="#apis">Activities V1 API</a></li>
 <li>The activities timeline should be grouped and ordered by months</li>
-<li>Each activity has it&apos;s own set of settings. Available activities and their settings are listed in the <a href="#activity-types-and-settings">Activity Types and Settings</a> below</li>
+<li>Each activity has its own set of settings that affect its rendering. Available activities and their settings are listed in the <a href="#activity-types-and-settings">Activity Types and Settings</a> below</li>
 <li>The app should support direct access to the zoom view via your router</li>
 <li>The app should support two types of filters:
 <ul>
@@ -315,20 +322,19 @@ You can find the full spec, screenshots and APIs below.</p>
 </ul>
 </li>
 <li>The app should support pagination for loading more activities in the form of a &apos;Load more&apos; button</li>
-<li>When the user clicks on the &apos;View work&apos; link it should open the zoom view</li>
 </ul>
 <h1 class="mume-header" id="bonus">Bonus</h1>
 
 <ol>
-<li>The app needs to work with another feed, <a href="#apis">APIs</a> #V2, that has a different structure. Make sure your code supports both structures.</li>
-<li>Add support for hiding activities. This should be persistent.</li>
-<li>Add autocomplete support to the text filter input. You can use you main API feed for that.</li>
+<li>Have the app support another feed, <a href="#apis">Activities V2 API</a>, that is structured differently. Same data, but a different structure. Make sure your code supports both structures from <a href="#apis">API #V1</a> and <a href="#apis">API #V2</a>.</li>
+<li>Add support for hiding activities. This effect should be persistent.</li>
+<li>Add autocomplete support to the text filter input. You can use you main <a href="#apis">APIs</a> feed for that.</li>
 </ol>
 <h1 class="mume-header" id="apis">APIs</h1>
 
 <ul>
-<li>V1: <a href="http://localhost:3000/student/:student_id:/activities/v1">http://localhost:3000/student/:student_id:/activities/v1</a></li>
-<li>V2: <a href="http://localhost:3000/student/:student_id:/activities/v2">http://localhost:3000/student/:student_id:/activities/v2</a></li>
+<li><a href="http://localhost:3000/student/:student_id:/activities/v1">Get activities - V1</a></li>
+<li><a href="http://localhost:3000/student/:student_id:/activities/v2">Get activities - V2</a></li>
 </ul>
 <h1 class="mume-header" id="screenshots">Screenshots</h1>
 
@@ -340,7 +346,7 @@ You can find the full spec, screenshots and APIs below.</p>
 <p><img src="assets/zoom.jpg" alt="Zoom"></p>
 <h1 class="mume-header" id="activity-types-and-settings">Activity Types and Settings</h1>
 
-<p>Every activity has two settings. They can be scored and they can be viewed in zoom mode (View work button). Those settings are not a part of the API response but resides on the client app.</p>
+<p>Every activity has two settings. They can be scored and they can be viewed in zoom mode (View work button). Those settings are not a part of the API response but rather resides on the client app.</p>
 <ul>
 <li><strong>Movie</strong>
 <ul>
