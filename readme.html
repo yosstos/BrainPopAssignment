@@ -310,12 +310,12 @@ Note: The time this assignment will take to complete will differ based on experi
 <h1 class="mume-header" id="requirements-guides">Requirements &amp; Guides:</h1>
 
 <ul>
-<li>This app contains one main view - the <a href="#activities-view">Activities view</a></li>
-<li>The main activities feed you should be using is the <a href="#apis">Activities V1 API</a></li>
-<li>When the user clicks on the &apos;View work&apos; link on an activity, it should open a modal as seen on the <a href="#zoom">Zoom</a> screenshot</li>
-<li>The app should support direct access to the zoom view via your router</li>
-<li>The activities timeline should be grouped and ordered by months as seen in the <a href="#activities-view">Activities view</a> screenshot</li>
-<li>Each activity has its own set of attributes that determine the way it is rendered. Available activities and their attributes are listed in the <a href="#activity-types-and-settings">Activity Types and Settings</a> section</li>
+<li>This app contains one main view - the <a href="#activities-view">Activities view</a>.</li>
+<li>The main activities feed you should be using is the <a href="#apis">Activities V1 API</a>.</li>
+<li>When the user clicks on the &apos;View work&apos; link on an activity, it should open a modal as seen on the <a href="#zoom">Zoom</a> screenshot. This modal shows the activity info plus the teacher comment on that activity.</li>
+<li>The app should support direct access to the zoom view via your router.</li>
+<li>The activities timeline should be grouped and ordered by months as seen in the <a href="#activities-view">Activities view</a> screenshot.</li>
+<li>Each activity has its own set of attributes that determine the way it is rendered. Available activities and their attributes are listed in the <a href="#activity-types-and-settings">Activity Types and Settings</a> section.</li>
 <li>The app should support two types of filters:
 <ul>
 <li>Free text filter</li>
@@ -323,20 +323,16 @@ Note: The time this assignment will take to complete will differ based on experi
 </ul>
 </li>
 <li>The app should display 10 activities at a time and support pagination for loading additional ones in the form of a &apos;Load more&apos; button.<br>
-No additional API calls are required for that, you already have all the info you need</li>
+No additional API calls are required for that, you already have all the info you need.</li>
+<li>There are two products variants. &apos;bp&apos; and &apos;bpjr&apos;. The product affects the topic icon rendering as seen in the <a href="#activities-view">Activities view</a> screenshot.</li>
 </ul>
 <h1 class="mume-header" id="bonus">Bonus</h1>
 
 <ul>
-<li>
-<p>Have the app support another feed, <a href="#apis">Activities V2 API</a>, that is structured differently. Same data, but a different structure. Make sure your code supports both structures from <a href="#apis">API #V1</a> and <a href="#apis">API #V2</a>. Create a new route that demonstrates this support.</p>
-</li>
-<li>
-<p>Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.</p>
-</li>
-<li>
-<p>Add autocomplete support to the text filter input. You can use your main <a href="#apis">V1 API</a> feed for that.</p>
-</li>
+<li>Have the app support another feed, <a href="#apis">Activities V2 API</a>, that is structured differently. Same data, but a different structure. Make sure your code supports both structures from <a href="#apis">API #V1</a> and <a href="#apis">API #V2</a>. Create a new route that demonstrates this support.</li>
+<li>Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This hidden state should be persistent.</li>
+<li>Add autocomplete support to the text filter input.<br>
+Use the topics names from your main <a href="#apis">API V1</a> feed to generate the autocomplete items list.</li>
 </ul>
 <h1 class="mume-header" id="apis">APIs</h1>
 

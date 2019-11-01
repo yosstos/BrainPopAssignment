@@ -44,24 +44,25 @@ Note: The time this assignment will take to complete will differ based on experi
 
 # Requirements & Guides:
 
-- This app contains one main view - the [Activities view](#activities-view)
-- The main activities feed you should be using is the [Activities V1 API](#apis)
-- When the user clicks on the 'View work' link on an activity, it should open a modal as seen on the [Zoom](#zoom) screenshot
-- The app should support direct access to the zoom view via your router
-- The activities timeline should be grouped and ordered by months as seen in the [Activities view](#activities-view) screenshot
-- Each activity has its own set of attributes that determine the way it is rendered. Available activities and their attributes are listed in the [Activity Types and Settings](#activity-types-and-settings) section
+- This app contains one main view - the [Activities view](#activities-view).
+- The main activities feed you should be using is the [Activities V1 API](#apis).
+- When the user clicks on the 'View work' link on an activity, it should open a modal as seen on the [Zoom](#zoom) screenshot. This modal shows the activity info plus the teacher comment on that activity.
+- The app should support direct access to the zoom view via your router.
+- The activities timeline should be grouped and ordered by months as seen in the [Activities view](#activities-view) screenshot.
+- Each activity has its own set of attributes that determine the way it is rendered. Available activities and their attributes are listed in the [Activity Types and Settings](#activity-types-and-settings) section.
 - The app should support two types of filters:
   - Free text filter
   - Activity type filter
 - The app should display 10 activities at a time and support pagination for loading additional ones in the form of a 'Load more' button.
-  No additional API calls are required for that, you already have all the info you need
+  No additional API calls are required for that, you already have all the info you need.
+- There are two products variants. 'bp' and 'bpjr'. The product affects the topic icon rendering as seen in the [Activities view](#activities-view) screenshot.
 
 # Bonus
 
 - Have the app support another feed, [Activities V2 API](#apis), that is structured differently. Same data, but a different structure. Make sure your code supports both structures from [API #V1](#apis) and [API #V2](#apis). Create a new route that demonstrates this support.
-
-- Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.
-- Add autocomplete support to the text filter input. You can use your main [V1 API](#apis) feed for that.
+- Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This hidden state should be persistent.
+- Add autocomplete support to the text filter input.
+  Use the topics names from your main [API V1](#apis) feed to generate the autocomplete items list.
 
 # APIs
 
