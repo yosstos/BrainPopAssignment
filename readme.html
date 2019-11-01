@@ -264,10 +264,7 @@ pre[data-line] .line-highlight[data-end]:after {
     <body for="html-export">
       <div class="mume markdown-preview  ">
       <p style="font-weight:600; font-size:36px">TABLE OF CONTENTS</p>
-```text cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false hide=true run_on_save=true modify_source=true code_chunk_offset=0  
-```  
-<ul>
-<li><a href="#environment-setup">Environment Setup</a></li>
+<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="toc"><div class="input-div"><div class="btn-group"><div class="run-btn btn"><span>&#x25B6;&#xFE0E;</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"></div></div><ul>
 <li><a href="#environment-setup">Environment Setup</a>
 <ul>
 <li><a href="#vue-client">Vue Client</a></li>
@@ -285,7 +282,6 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#auto-complete">Auto-complete</a></li>
 </ul>
 </li>
-<li><a href="#activity-types-and-settings">Activity Types and Settings</a></li>
 <li><a href="#activity-types-and-settings">Activity Types and Settings</a></li>
 </ul>
 <h1 class="mume-header" id="environment-setup">Environment Setup</h1>
@@ -331,11 +327,17 @@ No additional API calls are required for that, you already have all the info you
 </ul>
 <h1 class="mume-header" id="bonus">Bonus</h1>
 
-<ol>
-<li>Have the app support another feed, <a href="#apis">Activities V2 API</a>, that is structured differently. Same data, but a different structure. Make sure your code supports both structures from <a href="#apis">API #V1</a> and <a href="#apis">API #V2</a>. Create a new route that demonstrates this support.</li>
-<li>Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.</li>
-<li>Add autocomplete support to the text filter input. You can use your main <a href="#apis">V1 API</a> feed for that.</li>
-</ol>
+<ul>
+<li>
+<p>Have the app support another feed, <a href="#apis">Activities V2 API</a>, that is structured differently. Same data, but a different structure. Make sure your code supports both structures from <a href="#apis">API #V1</a> and <a href="#apis">API #V2</a>. Create a new route that demonstrates this support.</p>
+</li>
+<li>
+<p>Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.</p>
+</li>
+<li>
+<p>Add autocomplete support to the text filter input. You can use your main <a href="#apis">V1 API</a> feed for that.</p>
+</li>
+</ul>
 <h1 class="mume-header" id="apis">APIs</h1>
 
 <ul>

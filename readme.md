@@ -1,7 +1,9 @@
 <p style="font-weight:600; font-size:36px">TABLE OF CONTENTS</P>
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 <!-- code_chunk_output -->
-- [Environment Setup](#environment-setup)
+
 - [Environment Setup](#environment-setup)
   - [Vue Client](#vue-client)
   - [Server](#server)
@@ -10,11 +12,11 @@
 - [Bonus](#bonus)
 - [APIs](#apis)
 - [Screenshots](#screenshots)
-    - [Activities view](#activities-view)
-    - [Zoom](#zoom)
-    - [Auto-complete](#auto-complete)
+  - [Activities view](#activities-view)
+  - [Zoom](#zoom)
+  - [Auto-complete](#auto-complete)
 - [Activity Types and Settings](#activity-types-and-settings)
-- [Activity Types and Settings](#activity-types-and-settings)
+
 <!-- /code_chunk_output -->
 
 # Environment Setup
@@ -56,9 +58,10 @@ Note: The time this assignment will take to complete will differ based on experi
 
 # Bonus
 
-1. Have the app support another feed, [Activities V2 API](#apis), that is structured differently. Same data, but a different structure. Make sure your code supports both structures from [API #V1](#apis) and [API #V2](#apis). Create a new route that demonstrates this support.
-2. Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.
-3. Add autocomplete support to the text filter input. You can use your main [V1 API](#apis) feed for that.
+- Have the app support another feed, [Activities V2 API](#apis), that is structured differently. Same data, but a different structure. Make sure your code supports both structures from [API #V1](#apis) and [API #V2](#apis). Create a new route that demonstrates this support.
+
+- Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.
+- Add autocomplete support to the text filter input. You can use your main [V1 API](#apis) feed for that.
 
 # APIs
 
