@@ -4,13 +4,13 @@ var router = express.Router();
 var activitiesV1 = require('./activities/v1');
 var activitiesV2 = require('./activities/v2');
 
-// GET ACTIVITES V1
-router.get('/student/:student_id/activities/v1', function (req, res) {
+// GET ACTIVITIES V1
+router.get('/activities/v1', function (req, res) {
   res.send(activitiesV1)
 })
 
-// GET ACTIVITES V2
-router.get('/student/:student_id/activities/v2', function (req, res) {
+// GET ACTIVITIES V2
+router.get('/activities/v2', function (req, res) {
   res.send(activitiesV2)
 })
 

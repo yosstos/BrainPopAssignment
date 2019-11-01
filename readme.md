@@ -1,9 +1,7 @@
-<p style="font-weight:600; font-size:36px">TABLE OF CONTENT</P>
-
+<p style="font-weight:600; font-size:36px">TABLE OF CONTENTS</P>
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
 <!-- code_chunk_output -->
-
+- [Environment Setup](#environment-setup)
 - [Environment Setup](#environment-setup)
   - [Vue Client](#vue-client)
   - [Server](#server)
@@ -12,11 +10,11 @@
 - [Bonus](#bonus)
 - [APIs](#apis)
 - [Screenshots](#screenshots)
-  - [Activities view](#activities-view)
-  - [Zoom](#zoom)
-  - [Auto-complete](#auto-complete)
+    - [Activities view](#activities-view)
+    - [Zoom](#zoom)
+    - [Auto-complete](#auto-complete)
 - [Activity Types and Settings](#activity-types-and-settings)
-
+- [Activity Types and Settings](#activity-types-and-settings)
 <!-- /code_chunk_output -->
 
 # Environment Setup
@@ -38,33 +36,34 @@
 
 # Assignment Details
 
-Your task is to build a student timeline app as shown in the [Activities view](#activities-view) screenshot. This timeline displays all the student activities.
+Your task is to build a student timeline app as shown in the [Activities view](#activities-view) screenshot. This timeline displays all the student's activities.
 You can find the [Requirements](#requirements-guides), [Screenshots](#screenshots) and [APIs](#apis) below.
-The time this assignment will take to complete will differ based on experience.
+Note: The time this assignment will take to complete will differ based on experience.
 
 # Requirements & Guides:
 
-- This app contains one main view. That is the [Activities view](#activities-view)
+- This app contains one main view - the [Activities view](#activities-view)
 - The main activities feed you should be using is the [Activities V1 API](#apis)
-- When the user clicks on the 'View work' link on an activity it should open a modal as seen on the [Zoom](#zoom) screenshot
+- When the user clicks on the 'View work' link on an activity, it should open a modal as seen on the [Zoom](#zoom) screenshot
 - The app should support direct access to the zoom view via your router
-- The activities timeline should be grouped and ordered by months
-- Each activity has its own set of settings that affect the way it is rendered. Available activities and their settings are listed in the [Activity Types and Settings](#activity-types-and-settings) section
+- The activities timeline should be grouped and ordered by months as seen in the [Activities view](#activities-view) screenshot
+- Each activity has its own set of attributes that determine the way it is rendered. Available activities and their attributes are listed in the [Activity Types and Settings](#activity-types-and-settings) section
 - The app should support two types of filters:
   - Free text filter
   - Activity type filter
-- The app should support pagination for loading more activities in the form of a 'Load more' button
+- The app should display 10 activities at a time and support pagination for loading additional ones in the form of a 'Load more' button.
+  No additional API calls are required for that, you already have all the info you need
 
 # Bonus
 
-1. Have the app support another feed, [Activities V2 API](#apis), that is structured differently. Same data, but a different structure. Make sure your code supports both structures from [API #V1](#apis) and [API #V2](#apis). Create a new route that demonstrate this support.
+1. Have the app support another feed, [Activities V2 API](#apis), that is structured differently. Same data, but a different structure. Make sure your code supports both structures from [API #V1](#apis) and [API #V2](#apis). Create a new route that demonstrates this support.
 2. Add support for hiding activities. Every activity row should have a hide icon that hides it when clicked. This effect should be persistent.
-3. Add autocomplete support to the text filter input. You can use you main [APIs](#apis) feed for that.
+3. Add autocomplete support to the text filter input. You can use your main [V1 API](#apis) feed for that.
 
 # APIs
 
-- [Get activities - V1](http://localhost:3000/student/:student_id:/activities/v1)
-- [Get activities - V2](http://localhost:3000/student/:student_id:/activities/v2)
+- [Get activities - V1](http://localhost:3000/activities/v1)
+- [Get activities - V2](http://localhost:3000/activities/v2)
 
 # Screenshots
 
